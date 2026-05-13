@@ -5,6 +5,7 @@ const router =express.Router();
 const BookControllers = require("../Controllers/BookControllers");
 
 router.post("/book", BookControllers.addbooks)
- 
+router.put("/book/:id",BookControllers.updatebooks)
+router.delete("/book/:id",BookControllers.deletebooks)
 
 module.exports= router;
