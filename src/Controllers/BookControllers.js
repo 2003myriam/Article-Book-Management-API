@@ -54,6 +54,24 @@ async deletebooks(req,res){
     res.status(500).json(error.message)
   }
 }
+/* _______getting all  books of an article __________ */
+async gettingAllBooksOfAnArticle(req,res){
+  try {
+  console.log(req.body);
+    const articleId = req.params.articleId;
+    const books = await Book.find({ articleId });
+  
 
+  res.json({
+    "message":" there all book with this Id ",
+     data:{
+       books
+    }
+  })
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error.message)
+  }
+}
 }
 module.exports=new BookController
