@@ -157,16 +157,14 @@ Retrieve all books related to one article.
 
 ---
 
-# 📌 API Endpoints
-
+ 
 ## 👤 User Routes
 
 | Method | Endpoint | Description |
 |---|---|---|
 | POST | `/users/register` | Register user |
 | POST | `/users/login` | Login user |
-| PUT | `/users/:id` | Update user |
-
+ 
 ---
 
 ## 📰 Article Routes
